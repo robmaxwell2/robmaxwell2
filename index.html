@@ -1,56 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<title>Robert Maxwell</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
-
-<body>
+    <title>Robert Maxwell</title>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        size: 50vh;
+      }
+      </style>
+  </head>
   
-<nav>
-  <ul>
-    <li><a href="about.asp">About</a></li>
-    <li><a href="http://www.linkedin.com/in/robmaxwell2">Linkedin</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-    <li><a href="home.asp">Home</a></li>
-  </ul>
-</nav>    
-
-<header class="mainheader">
-   <div class="container-fluid h-100">
-      <div class="row h-100 align-items-center justify-content text-center text-white" 
-      img src="Background.png"; background-color: rgba(0, 0, 0.2);">
-        <div class="col-lg-8>"
-
-    <h1 class="display-1 font-weight-bold">Helping you <span>sell</span> you</h1>
-     <hr class="bg-white my-5" />
-
-              <p>Want to articulate a powerful message that gives you results you seek?</p>
-
-                    <a href="#about" class="btn btn-primary btn-lg mt-3">Learn more. Connect with me!</a>
-       </div>
-     </div>
-  </div>
-
-</header>
-
-<footer style="width:100%; height: 100px; float: left;">
-      <p class="section2">Here is another paragraph test section</p>
-</footer>    
+  <body>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Robert Maxwell</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="https://www.robertmaxwell.slccwebdev.com">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/robmaxwell2">Linkedin</a>
+              <a class="nav-link" href="contactme.php">About Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div id="sectionbackground">   
+   <header class="mainHeader">
+        <div class="container-fluid h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(74, 12, 76, 0.2);">
+            
+            <div class="col-lg-8">
     
+              <h1 class="display-1 font-weight-bold">Helping you <span>sell</span> you</h1>
+              <hr class="bg-white my-5" />
     
-<script>
-  const name = prompt("What's your name?")
-               alert(`Hi ${name}! Thank you for reviewing my resume site.`)
-</script>   
+              <h1>Want to articulate a powerful message that gives you results you seek?</h1>
+    
+              <a href="https://www.linkedin.com/in/robmaxwell2" class="btn btn-primary btn-lg mt-3">Learn more. Connect with me!</a>
+            </div>
+          </div>
+        </div>  
+      </header>
+    
+      <section id="about">
+        <div class="container-fluid h-100">
+            <div class="row align-items-center justify-content-center text-center text-white h-100" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-lg-8">
+                    <h1 class="display-1 font-weight-bold">Site </h1>
 
-</body>
-</html> 
+                    <hr class="my-4 bg-white" />
+
+                    <p class="font-weight-light mx-5">
+                        Learn to Articulate Your Brand
+                    </p>
+                    <a class="btn btn-primary btn-lg mt-3" role="button" href="https://www.linkedin.com/in/robmaxwell2">Find Out More</a>
+                </div>
+            </div>
+        </div>
+
+</div>      
+
+        <div class="container" id="formcontainer">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="russia">Russia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+        
+     </section>
+     
+   <script>
+         const name = prompt("What's your name?")
+                   alert(`Hi ${name}! Thank you for visiting my site.`)
+
+var d = new Date();
+var time = d.getHours();
+
+if (time < 12) {
+   alert("Good morning!");
+  }
+if (time > 12) {
+   alert("Good afternoon!");
+}
+if (time > 16) {
+   alert("Good Evening");
+} 
+           
+    </script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       
+  </body>
+</html>
