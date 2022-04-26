@@ -1,11 +1,13 @@
 .mainHeader {
-	height: 200vh;
+	height: 100vh;
 	min-height: 40em;
-	background-image: url("https://robertmaxwell.slccwebdev.com/handshake.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+}
+#understand {
+	background-color: chartreuse;
 }
 
 .container {
@@ -33,7 +35,7 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-	background-color: #38362f;
+	background-color: #04AA6D;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -43,7 +45,7 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-	background-color: #363432;
+	background-color: #45a049;
   }
   
   /* Add a background color and some padding around the form */
